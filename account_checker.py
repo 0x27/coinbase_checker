@@ -17,7 +17,7 @@ def main():
     client = Client(creds.api_key, creds.api_secret)
     data = client.get_accounts()
     total_euro_value = 0.00
-    for x in range(0,4):
+    for x in range(0,5):
         currency_type = data[x]["balance"]["currency"]
         currency_amount = data[x]["balance"]["amount"]
         euros_amount = data[x]["native_balance"]["amount"]
